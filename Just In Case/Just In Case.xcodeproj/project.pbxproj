@@ -13,6 +13,8 @@
 		699F0CBC27E43BAA00385804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699F0CBA27E43BAA00385804 /* Main.storyboard */; };
 		699F0CBE27E43BAB00385804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699F0CBD27E43BAB00385804 /* Assets.xcassets */; };
 		699F0CC127E43BAB00385804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699F0CBF27E43BAB00385804 /* LaunchScreen.storyboard */; };
+		C285772627E9AC8100DFF97B /* UITextFieldDesignbales.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285772527E9AC8100DFF97B /* UITextFieldDesignbales.swift */; };
+		C285772827E9AEB000DFF97B /* UIButtonDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285772727E9AEB000DFF97B /* UIButtonDesignable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		699F0CBD27E43BAB00385804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		699F0CC027E43BAB00385804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		699F0CC227E43BAB00385804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C285772527E9AC8100DFF97B /* UITextFieldDesignbales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldDesignbales.swift; sourceTree = "<group>"; };
+		C285772727E9AEB000DFF97B /* UIButtonDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonDesignable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,7 @@
 		699F0CB327E43BAA00385804 /* Just In Case */ = {
 			isa = PBXGroup;
 			children = (
-				C23D91A127E47F3F002E7F78 /* Components */,
+				C285772427E9AC1F00DFF97B /* Designbales */,
 				699F0CB427E43BAA00385804 /* AppDelegate.swift */,
 				699F0CB627E43BAA00385804 /* SceneDelegate.swift */,
 				699F0CB827E43BAA00385804 /* ViewController.swift */,
@@ -68,11 +72,13 @@
 			path = "Just In Case";
 			sourceTree = "<group>";
 		};
-		C23D91A127E47F3F002E7F78 /* Components */ = {
+		C285772427E9AC1F00DFF97B /* Designbales */ = {
 			isa = PBXGroup;
 			children = (
+				C285772527E9AC8100DFF97B /* UITextFieldDesignbales.swift */,
+				C285772727E9AEB000DFF97B /* UIButtonDesignable.swift */,
 			);
-			path = Components;
+			path = Designbales;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C285772827E9AEB000DFF97B /* UIButtonDesignable.swift in Sources */,
 				699F0CB927E43BAA00385804 /* ViewController.swift in Sources */,
 				699F0CB527E43BAA00385804 /* AppDelegate.swift in Sources */,
 				699F0CB727E43BAA00385804 /* SceneDelegate.swift in Sources */,
+				C285772627E9AC8100DFF97B /* UITextFieldDesignbales.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
