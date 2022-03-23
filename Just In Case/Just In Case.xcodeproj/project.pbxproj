@@ -13,6 +13,8 @@
 		699F0CBC27E43BAA00385804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699F0CBA27E43BAA00385804 /* Main.storyboard */; };
 		699F0CBE27E43BAB00385804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699F0CBD27E43BAB00385804 /* Assets.xcassets */; };
 		699F0CC127E43BAB00385804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699F0CBF27E43BAB00385804 /* LaunchScreen.storyboard */; };
+		C25F0CC927EAE7CA00E707FE /* seafood.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F0CC827EAE7CA00E707FE /* seafood.swift */; };
+		C25F0CCD27EAF54600E707FE /* seafoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F0CCC27EAF54600E707FE /* seafoodViewController.swift */; };
 		C285772627E9AC8100DFF97B /* UITextFieldDesignbales.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285772527E9AC8100DFF97B /* UITextFieldDesignbales.swift */; };
 		C285772827E9AEB000DFF97B /* UIButtonDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285772727E9AEB000DFF97B /* UIButtonDesignable.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,8 @@
 		699F0CBD27E43BAB00385804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		699F0CC027E43BAB00385804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		699F0CC227E43BAB00385804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25F0CC827EAE7CA00E707FE /* seafood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seafood.swift; sourceTree = "<group>"; };
+		C25F0CCC27EAF54600E707FE /* seafoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seafoodViewController.swift; sourceTree = "<group>"; };
 		C285772527E9AC8100DFF97B /* UITextFieldDesignbales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldDesignbales.swift; sourceTree = "<group>"; };
 		C285772727E9AEB000DFF97B /* UIButtonDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonDesignable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,12 +68,22 @@
 				699F0CB427E43BAA00385804 /* AppDelegate.swift */,
 				699F0CB627E43BAA00385804 /* SceneDelegate.swift */,
 				699F0CB827E43BAA00385804 /* ViewController.swift */,
+				C25F0CCC27EAF54600E707FE /* seafoodViewController.swift */,
+				C25F0CC327EAE43F00E707FE /* meun */,
 				699F0CBA27E43BAA00385804 /* Main.storyboard */,
 				699F0CBD27E43BAB00385804 /* Assets.xcassets */,
 				699F0CBF27E43BAB00385804 /* LaunchScreen.storyboard */,
 				699F0CC227E43BAB00385804 /* Info.plist */,
 			);
 			path = "Just In Case";
+			sourceTree = "<group>";
+		};
+		C25F0CC327EAE43F00E707FE /* meun */ = {
+			isa = PBXGroup;
+			children = (
+				C25F0CC827EAE7CA00E707FE /* seafood.swift */,
+			);
+			path = meun;
 			sourceTree = "<group>";
 		};
 		C285772427E9AC1F00DFF97B /* Designbales */ = {
@@ -152,9 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C25F0CCD27EAF54600E707FE /* seafoodViewController.swift in Sources */,
 				C285772827E9AEB000DFF97B /* UIButtonDesignable.swift in Sources */,
 				699F0CB927E43BAA00385804 /* ViewController.swift in Sources */,
 				699F0CB527E43BAA00385804 /* AppDelegate.swift in Sources */,
+				C25F0CC927EAE7CA00E707FE /* seafood.swift in Sources */,
 				699F0CB727E43BAA00385804 /* SceneDelegate.swift in Sources */,
 				C285772627E9AC8100DFF97B /* UITextFieldDesignbales.swift in Sources */,
 			);

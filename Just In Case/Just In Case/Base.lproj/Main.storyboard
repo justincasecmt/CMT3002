@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -86,6 +87,9 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Seafood"/>
+                                <connections>
+                                    <segue destination="yKE-cf-lhG" kind="custom" id="S1f-Gy-KJR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-TP-3hm">
                                 <rect key="frame" x="51" y="88" width="120" height="47"/>
@@ -103,6 +107,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV8-zW-x2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="834.78260869565224" y="-167.41071428571428"/>
+        </scene>
+        <!--Seafood View Controller-->
+        <scene sceneID="0Pb-fS-7X4">
+            <objects>
+                <viewController id="yKE-cf-lhG" customClass="seafoodViewController" customModule="Just_In_Case" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z6Q-rV-M2i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qy8-1w-yzx">
+                                <rect key="frame" x="-36" y="44" width="288" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rYi-Ag-FZo">
+                                    <size key="itemSize" width="219" height="235"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dSg-Ef-c68">
+                                        <rect key="frame" x="34.5" y="0.0" width="219" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WvL-rc-fNc">
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="235"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Norway Salmon Steak" translatesAutoresizingMaskIntoConstraints="NO" id="eyV-Ed-Qig">
+                                                    <rect key="frame" x="12" y="8" width="195" height="140"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="140" id="pF3-Rv-fBl"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Norway Salmon Steak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oo-RW-SOV">
+                                                    <rect key="frame" x="8" y="152" width="203" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="iEE-aM-Jki"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HKD $70" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chN-NX-UWT">
+                                                    <rect key="frame" x="31" y="195" width="165" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemPinkColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="eyV-Ed-Qig" secondAttribute="trailing" constant="12" id="Gyw-8f-jqX"/>
+                                                <constraint firstItem="7oo-RW-SOV" firstAttribute="leading" secondItem="WvL-rc-fNc" secondAttribute="leading" constant="8" id="QtD-rD-a9M"/>
+                                                <constraint firstItem="eyV-Ed-Qig" firstAttribute="top" secondItem="WvL-rc-fNc" secondAttribute="top" constant="8" id="VUh-Zx-zQU"/>
+                                                <constraint firstAttribute="trailing" secondItem="7oo-RW-SOV" secondAttribute="trailing" constant="8" id="jfu-Ja-8m2"/>
+                                                <constraint firstItem="7oo-RW-SOV" firstAttribute="top" secondItem="eyV-Ed-Qig" secondAttribute="bottom" constant="4" id="tMQ-w6-gme"/>
+                                                <constraint firstItem="eyV-Ed-Qig" firstAttribute="leading" secondItem="WvL-rc-fNc" secondAttribute="leading" constant="12" id="xFo-xt-v9D"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="219" height="235"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="yKE-cf-lhG" id="3Km-zf-FMm"/>
+                                    <outlet property="delegate" destination="yKE-cf-lhG" id="LRp-dX-OkV"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a8N-aI-Nu5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Haj-My-WOD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eI6-uv-B3G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556.521739130435" y="-167.41071428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BnK-nC-MKI">
@@ -406,22 +486,34 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="Jg5-kj-aHT">
+            <size key="intrinsicContentSize" width="58" height="34"/>
+        </designable>
         <designable name="Jhz-ea-1Aj">
             <size key="intrinsicContentSize" width="70" height="20"/>
         </designable>
         <designable name="LZT-DY-B63">
             <size key="intrinsicContentSize" width="39" height="21"/>
         </designable>
+        <designable name="QHO-7l-gQu">
+            <size key="intrinsicContentSize" width="39" height="21"/>
+        </designable>
+        <designable name="W4P-5g-w4X">
+            <size key="intrinsicContentSize" width="70" height="20"/>
+        </designable>
+        <designable name="iU7-yJ-pcd">
+            <size key="intrinsicContentSize" width="132" height="20"/>
+        </designable>
         <designable name="o4q-vj-tK0">
             <size key="intrinsicContentSize" width="46" height="34"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="T2j-ij-soR"/>
         <segue reference="RUR-oa-MKC"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="430" height="299"/>
+        <image name="Norway Salmon Steak" width="1824" height="1026"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="fork.knife.circle.fill" catalog="system" width="128" height="121"/>
         <image name="hammer.circle.fill" catalog="system" width="128" height="121"/>
@@ -444,6 +536,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemFillColor">
             <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
