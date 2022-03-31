@@ -13,6 +13,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Just_In_Case" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -25,10 +26,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpD-57-qYM">
-                                <rect key="frame" x="37" y="164" width="340" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Just In Case" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vly-8a-Q16">
                                 <rect key="frame" x="37" y="105" width="185" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -36,18 +33,62 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="cart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5q3-HQ-dgF">
-                                <rect key="frame" x="339" y="56.5" width="38" height="40"/>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="IFd-gv-aDz">
+                                <rect key="frame" x="0.0" y="69" width="414" height="730"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                            </imageView>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Just In Case" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-da-dJ9">
+                                        <rect key="frame" x="41" y="10" width="228" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="cart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bgX-F1-aEi">
+                                        <rect key="frame" x="328" y="6.5" width="41" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsj-bk-GqS">
+                                        <rect key="frame" x="41" y="79" width="328" height="185"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Arrival" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-zS-OXC">
+                                        <rect key="frame" x="41" y="297" width="161" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popoular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF7-a2-9fU">
+                                        <rect key="frame" x="41" y="491" width="161" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJ7-F2-Mnl">
+                                        <rect key="frame" x="280" y="307" width="126" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="See All &gt;"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF1-Mj-WeF">
+                                        <rect key="frame" x="280" y="501" width="126" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="See All &gt;"/>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="UTc-ud-4ua"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="V9k-6g-yU5"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="65.625"/>
         </scene>
@@ -76,19 +117,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meat" translatesAutoresizingMaskIntoConstraints="NO" id="Yhp-v9-wIO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yhp-v9-wIO">
                                 <rect key="frame" x="35" y="263" width="155" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meun2" translatesAutoresizingMaskIntoConstraints="NO" id="ko1-jj-NTI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ko1-jj-NTI">
                                 <rect key="frame" x="224" y="263" width="155" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meun3" translatesAutoresizingMaskIntoConstraints="NO" id="ODc-ra-1T0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODc-ra-1T0">
                                 <rect key="frame" x="35" y="450" width="155" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meun4" translatesAutoresizingMaskIntoConstraints="NO" id="Eum-t9-MUH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eum-t9-MUH">
                                 <rect key="frame" x="224" y="450" width="155" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -498,7 +539,7 @@
         <!--Sign Up-->
         <scene sceneID="CWr-tb-Nnh">
             <objects>
-                <viewController id="Fj9-f2-NgB" sceneMemberID="viewController">
+                <viewController id="Fj9-f2-NgB" customClass="SignUpViewController" customModule="Just_In_Case" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YSx-2p-hJl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -574,6 +615,7 @@
                                 <state key="selected" image="eye.slash.fill" catalog="system"/>
                                 <connections>
                                     <action selector="hidebuttonAction:" destination="Spa-0c-AmD" eventType="touchUpInside" id="0Sj-Oc-gzD"/>
+                                    <action selector="hidebuttonAction:" destination="Fj9-f2-NgB" eventType="touchUpInside" id="UeT-CL-cYg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -582,6 +624,10 @@
                         <color key="tintColor" systemColor="labelColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="Sfr-je-ucm"/>
+                    <connections>
+                        <outlet property="hidepassword" destination="Azb-cR-eba" id="CFq-Gi-hRa"/>
+                        <outlet property="password" destination="rgz-WQ-r50" id="Q8c-jz-4nj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1H-0A-llt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -713,7 +759,7 @@
         <!--Change Password-->
         <scene sceneID="plY-JZ-mey">
             <objects>
-                <viewController id="Dtq-Lq-e5c" sceneMemberID="viewController">
+                <viewController id="Dtq-Lq-e5c" customClass="ChangePasswordViewController" customModule="Just_In_Case" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RTZ-bV-JmY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -776,6 +822,7 @@
                                 <state key="normal" image="eye.fill" catalog="system"/>
                                 <state key="selected" image="eye.slash.fill" catalog="system"/>
                                 <connections>
+                                    <action selector="hidebuttonAction:" destination="Dtq-Lq-e5c" eventType="touchUpInside" id="IWs-fZ-2l5"/>
                                     <action selector="hidebuttonAction:" destination="Spa-0c-AmD" eventType="touchUpInside" id="heF-DA-5Sv"/>
                                 </connections>
                             </button>
@@ -785,6 +832,10 @@
                         <color key="tintColor" systemColor="labelColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Change Password" id="VLk-Xe-7g8"/>
+                    <connections>
+                        <outlet property="hidepassword" destination="Tbf-bS-yBr" id="4ls-Ch-Epl"/>
+                        <outlet property="password" destination="pZ8-jy-URT" id="l3V-EV-wdf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgj-eE-Ile" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -793,7 +844,7 @@
         <!--Forget Password-->
         <scene sceneID="MJE-tq-R4U">
             <objects>
-                <viewController id="Jhl-Lz-uH1" sceneMemberID="viewController">
+                <viewController id="Jhl-Lz-uH1" customClass="ForgetPasswordViewController" customModule="Just_In_Case" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sq0-cD-D5p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1020,10 +1071,6 @@
         <image name="key" catalog="system" width="86" height="128"/>
         <image name="location" catalog="system" width="128" height="118"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="meat" width="286.66665649414062" height="199.33332824707031"/>
-        <image name="meun2" width="133.33332824707031" height="133.33332824707031"/>
-        <image name="meun3" width="341.33334350585938" height="340.66665649414062"/>
-        <image name="meun4" width="360" height="230"/>
         <image name="payme" width="717" height="737"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="questionmark.app" catalog="system" width="128" height="114"/>

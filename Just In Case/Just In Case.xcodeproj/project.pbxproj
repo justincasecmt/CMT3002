@@ -19,6 +19,9 @@
 		69B0156427F2B401005C9177 /* StoreAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0156327F2B401005C9177 /* StoreAddressViewController.swift */; };
 		69B0156627F2BA48005C9177 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0156527F2BA48005C9177 /* FAQViewController.swift */; };
 		69B0156827F41745005C9177 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0156727F41745005C9177 /* LoginViewController.swift */; };
+		69C8EF4027F603BD006AE289 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8EF3F27F603BD006AE289 /* SignUpViewController.swift */; };
+		69C8EF4227F60421006AE289 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8EF4127F60421006AE289 /* ChangePasswordViewController.swift */; };
+		69C8EF4427F60440006AE289 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8EF4327F60440006AE289 /* ForgetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		69B0156327F2B401005C9177 /* StoreAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAddressViewController.swift; sourceTree = "<group>"; };
 		69B0156527F2BA48005C9177 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FAQViewController.swift; path = "Just In Case/FAQViewController.swift"; sourceTree = "<group>"; };
 		69B0156727F41745005C9177 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		69C8EF3F27F603BD006AE289 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		69C8EF4127F60421006AE289 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		69C8EF4327F60440006AE289 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				69B0154A27F209F4005C9177 /* SceneDelegate.swift */,
 				69B0154C27F209F4005C9177 /* ViewController.swift */,
 				69B0154E27F209F4005C9177 /* Main.storyboard */,
+				69C8EF4327F60440006AE289 /* ForgetPasswordViewController.swift */,
+				69C8EF4127F60421006AE289 /* ChangePasswordViewController.swift */,
+				69C8EF3F27F603BD006AE289 /* SignUpViewController.swift */,
 				69B0156727F41745005C9177 /* LoginViewController.swift */,
 				69B0156327F2B401005C9177 /* StoreAddressViewController.swift */,
 				69B0155427F209F6005C9177 /* Assets.xcassets */,
@@ -156,14 +165,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C8EF4227F60421006AE289 /* ChangePasswordViewController.swift in Sources */,
 				69B0156827F41745005C9177 /* LoginViewController.swift in Sources */,
 				69B0155327F209F4005C9177 /* Just_In_Case.xcdatamodeld in Sources */,
 				69B0156627F2BA48005C9177 /* FAQViewController.swift in Sources */,
 				69B0154D27F209F4005C9177 /* ViewController.swift in Sources */,
+				69C8EF4027F603BD006AE289 /* SignUpViewController.swift in Sources */,
 				69B0156027F2A3BB005C9177 /* PaymentViewController.swift in Sources */,
 				69B0156427F2B401005C9177 /* StoreAddressViewController.swift in Sources */,
 				69B0154927F209F4005C9177 /* AppDelegate.swift in Sources */,
 				69B0154B27F209F4005C9177 /* SceneDelegate.swift in Sources */,
+				69C8EF4427F60440006AE289 /* ForgetPasswordViewController.swift in Sources */,
 				69B0156227F2A7AE005C9177 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

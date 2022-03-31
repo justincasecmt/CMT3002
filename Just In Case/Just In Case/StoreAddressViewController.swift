@@ -43,11 +43,21 @@ class StoreAddressViewController: UIViewController {
         locationLabel.text = "Location:"
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let latitude: CLLocationDegrees = 22.3795412
+        let longtitude: CLLocationDegrees = 114.21134322918411
+        let coordinates: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
         
+        let latDelta: CLLocationDegrees = 0.03
+        let lonDelta: CLLocationDegrees = 0.03
+        let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
         
+        let region: MKCoordinateRegion = MKCoordinateRegion(center: coordinates, span: span)
+        
+        storemap.setRegion(region, animated: true)
         // Do any additional setup after loading the view.
     }
     
